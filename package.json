@@ -1,0 +1,25 @@
+{
+  "name": "validate-args",
+  "version": "1.0.0",
+  "description": "Validate function arguments and general variables",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d4n5h/validate-args.git"
+  },
+  "keywords": [
+    "validate",
+    "args",
+    "arguments",
+    "variables"
+  ],
+  "author": "Daniel Shlomo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/d4n5h/validate-args/issues"
+  },
+  "homepage": "https://github.com/d4n5h/validate-args#readme"
+}
