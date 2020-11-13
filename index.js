@@ -4,7 +4,6 @@ module.exports = function (name) {
     this.val = null
     this.type = null
     this.prefix = 'ArgumentError in ' + name + ': Argument #'
-
     this.utils = {
         checkType: (val, type) => {
             if (Array.isArray(val) && type == 'array') return true
@@ -13,13 +12,21 @@ module.exports = function (name) {
         }
     }
 
-    this.add = (val, type) => {
+    this.add = (val, type, optional) => {
         this.val = val
         this.position++
         this.type = type
-        if (!this.utils.checkType(this.val, type)) console.error(this.prefix + this.position + ' Expected type ' + type + ', got `' + typeof this.val + '`')
+        if (optional) {
+            if (val != undefined) {
+                if (!this.utils.checkType(this.val, type)) console.error(this.prefix + this.position + ' Expected type ' + type + ', got `' + typeof this.val + '`')
+
+            }
+        } else {
+            if (!this.utils.checkType(this.val, type)) console.error(this.prefix + this.position + ' Expected type ' + type + ', got `' + typeof this.val + '`')
+        }
         return this
     }
+
 
     this.minLength = (minLength) => {
         if (this.val.length < minLength) console.error(this.prefix + this.position + ' Expected ' + typeof this.val + ' to have a minimum length of `' + minLength + '`, got `' + this.val.length + '`')
@@ -66,7 +73,7 @@ module.exports = function (name) {
         return this
     }
 
-    this.nest_min = (key, amount) => {
+    this.nest_min = (key, min) => {
         if (this.val[key] < min) console.error(this.prefix + this.position + ' Expected key `' + key + '` inside object to not be smaller than `' + min + '`, got `' + this.val[key] + '`')
         return this
     }
@@ -76,7 +83,7 @@ module.exports = function (name) {
         return this
     }
 
-    this.nest_max = (key, amount) => {
+    this.nest_max = (key, max) => {
         if (this.val[key] > max) console.error(this.prefix + this.position + ' Expected key `' + key + '` inside object to not be larger than `' + max + '`, got `' + this.val[key] + '`')
         return this
     }
