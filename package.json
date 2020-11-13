@@ -1,6 +1,6 @@
 {
   "name": "arguments-validate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Validate function arguments and general variables",
   "main": "index.js",
   "scripts": {
