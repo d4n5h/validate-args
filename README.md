@@ -5,7 +5,7 @@
 
 ```javascript
 
-const validate = require('validate-args')
+const validate = require('validate-arguments')
 const t = new validate('C2 constructor')
 
 t.add('asd', 'string').minLength(5).maxLength(1).regex(/^[A-Za-z]+$/)
