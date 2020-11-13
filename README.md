@@ -1,11 +1,11 @@
 # Validator
  Validate function arguments and general variables
 
-### Examples
+### Example
 
 ```javascript
 
-const validate = require('@danisl99/validator')
+const validate = require('arguments-validate')
 const t = new validate('C2 constructor')
 
 t.add('asd', 'string').minLength(5).maxLength(1).regex(/^[A-Za-z]+$/)

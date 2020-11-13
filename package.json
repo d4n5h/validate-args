@@ -1,5 +1,5 @@
 {
-  "name": "@danisl99/validator",
+  "name": "arguments-validate",
   "version": "1.0.0",
   "description": "Validate function arguments and general variables",
   "main": "index.js",
