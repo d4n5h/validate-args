@@ -1,36 +1,4 @@
 {
-  "_from": "arguments-validate",
-  "_id": "arguments-validate@1.0.1",
-  "_inBundle": false,
-  "_integrity": "sha512-22cNHH7PjwK8Irn29zv5AFa9gg/vpZaxEWRngUE1UFVM+OgBeLeMpDuK0uqqT5GZtNHtcmwdPOqZu6eowZNmzg==",
-  "_location": "/arguments-validate",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "tag",
-    "registry": true,
-    "raw": "arguments-validate",
-    "name": "arguments-validate",
-    "escapedName": "arguments-validate",
-    "rawSpec": "",
-    "saveSpec": null,
-    "fetchSpec": "latest"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/arguments-validate/-/arguments-validate-1.0.1.tgz",
-  "_shasum": "b4c9ac6fe30a33295c54aa3c2bdfb3246b07510a",
-  "_spec": "arguments-validate",
-  "_where": "C:\\Users\\Admin\\Documents\\c2-client",
-  "author": {
-    "name": "Daniel Shlomo"
-  },
-  "bugs": {
-    "url": "https://github.com/d4n5h/validate-args/issues"
-  },
-  "bundleDependencies": false,
-  "deprecated": false,
   "description": "Validate function arguments and general variables",
   "homepage": "https://github.com/d4n5h/validate-args#readme",
   "keywords": [
@@ -49,5 +17,5 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "1.0.1"
+  "version": "1.0.2"
 }
