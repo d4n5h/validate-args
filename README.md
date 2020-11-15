@@ -7,7 +7,7 @@
 
 const validate = require('arguments-validate')
 
-function test() {
+function test(obj, cb) {
     const v = new validate('Test function')
     v.add(obj, 'object').hasKey('header').nest({ header: { type: 'object' } })
         .add(cb, 'function', true) // Optional argument
